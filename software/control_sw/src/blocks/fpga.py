@@ -3,9 +3,9 @@ import time
 import datetime
 
 from .block import Block
-from souk_mkid_readout.error_levels import *
-from souk_mkid_readout import __version__
-from souk_mkid_readout import __fwversion__
+from mkid_readout.error_levels import *
+from mkid_readout import __version__
+from mkid_readout import __fwversion__
 
 import casperfpga.sysmon
 

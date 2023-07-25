@@ -1,6 +1,6 @@
 from .block import Block
 from casperfpga import i2c, i2c_sfp
-from cosmic_f.error_levels import *
+from mkid_readout.error_levels import *
 
 class Qsfp(Block):
     def __init__(self, host, name, logger=None):

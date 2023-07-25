@@ -7,12 +7,12 @@ In order to use a clock file, it should be present on the RFSoC
 board's filesystem in directory `/lib/firmware/`.
 
 This can be achieved using `scp` (or your favourite file copying protocol),
-or `SoukMkidReadout.rfdc.core.upload_clock_file(<local file path>)`.
+or `MkidReadout.rfdc.core.upload_clock_file(<local file path>)`.
 If using `scp`, the typical username:password on an RFSoC board is:
 `casper:casper`.
 
 You can check what clock files are currently available with:
-`SoukMkidReadout.rfdc.core.show_clk_files()`.
+`MkidReadout.rfdc.core.show_clk_files()`.
 
 ### LMX Configuration
 

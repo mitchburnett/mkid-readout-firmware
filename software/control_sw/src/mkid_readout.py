@@ -33,9 +33,9 @@ N_RX_OVERSAMPLE = 2 # RX channelizer oversampling factor
 N_RX_FFT = N_RX_OVERSAMPLE*2048 # Number of FFT points in RX channelizer 
 N_TX_FFT = 2048 # Number of FFT points in TX synthesizer (not including oversampling)
 
-class SoukMkidReadout():
+class MkidReadout():
     """
-    A control class for SOUK MKID Readout firmware on a single board
+    A control class for MKID Readout firmware on a single board
 
     :param host: Hostname/IP address of FPGA board
     :type host: str

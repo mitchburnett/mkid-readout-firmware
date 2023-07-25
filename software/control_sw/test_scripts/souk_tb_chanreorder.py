@@ -1,5 +1,5 @@
 import numpy as np
-import souk_mkid_readout
+import mkid_readout
 
 HOST = 'rfsoc4x2'
 FPGFILE = '/home/jackh/src/souk-firmware/firmware/src/souk_single_pipeline_4x2/outputs/souk_single_pipeline_4x2_2023-06-02_1627.fpg'
@@ -7,7 +7,7 @@ NCHANS = 10
 ACCLEN = 1024
 VERBOSE = True
 
-r = souk_mkid_readout.SoukMkidReadout(HOST, fpgfile=FPGFILE)
+r = mkid_readout.MkidReadout(HOST, fpgfile=FPGFILE)
 
 r.initialize()
 print('Enabling TVG')

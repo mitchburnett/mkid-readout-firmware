@@ -3,7 +3,7 @@
 import time
 import logging
 import numpy as np
-from souk_mkid_readout import SoukMkidReadout
+from mkid_readout import MkidReadout
 
 CONFFILE = '/home/casper/git/souk-firmware/software/control_sw/config/souk-single-pipeline-4x2.yaml'
 ACCNUM = 0
@@ -58,7 +58,7 @@ def wait_non_zero_ip(acc, poll_time_s=5):
     return
 
 def main():
-    r = SoukMkidReadout('localhost', configfile=CONFFILE, local=True)
+    r = MkidReadout('localhost', configfile=CONFFILE, local=True)
     acc = r.accumulators[ACCNUM]
     addrs, nbytes = get_bram_addresses(acc)
     acc._wait_for_acc(0.00005)

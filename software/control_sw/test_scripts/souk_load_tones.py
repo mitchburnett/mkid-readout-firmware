@@ -7,7 +7,7 @@ polyphase synthesizer
 """
 import argparse
 import numpy as np
-from souk_mkid_readout import SoukMkidReadout
+from mkid_readout import MkidReadout
 
 def main(host, configfile, freqs_hz, randomphase=False):
     """
@@ -17,7 +17,7 @@ def main(host, configfile, freqs_hz, randomphase=False):
     If ``randomphase``, apply random phases to each tone.
     """
     print(f"Connecting to board {host}")
-    r = SoukMkidReadout(host, configfile=configfile)
+    r = MkidReadout(host, configfile=configfile)
 
     # Put everything in a known starting state
     r.program()

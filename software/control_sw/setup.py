@@ -15,15 +15,15 @@ here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, 'src', '__version__.py'), 'w') as fh:
     fh.write('__version__ = "%s"' % ver)
 
-setup(name='souk_mkid_readout',
+setup(name='mkid_readout',
       version='%s' % ver,
-      description='Python libraries and scripts to control the SOUK Firmware',
+      description='Python libraries and scripts to control MKID readout firmware',
       author='Jack Hickish',
       author_email='jack@realtimeradio.co.uk',
       url='https://github.com/realtimeradio/souk-firmware',
-      provides=['souk_mkid_readout'],
-      packages=['souk_mkid_readout', 'souk_mkid_readout.blocks'],
-      package_dir={'souk_mkid_readout' : 'src'},
+      provides=['mkid_readout'],
+      packages=['mkid_readout', 'mkid_readout.blocks'],
+      package_dir={'mkid_readout' : 'src'},
       scripts=glob.glob('scripts/*.py'),
       )
 

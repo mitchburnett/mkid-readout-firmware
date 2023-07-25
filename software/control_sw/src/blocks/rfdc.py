@@ -3,7 +3,7 @@ import time
 import datetime
 
 from .block import Block
-from souk_mkid_readout.error_levels import *
+from mkid_readout.error_levels import *
 
 class Rfdc(Block):
     """

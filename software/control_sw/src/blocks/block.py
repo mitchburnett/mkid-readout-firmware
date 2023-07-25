@@ -1,7 +1,7 @@
 import logging
 from termcolor import colored
-from souk_mkid_readout import helpers
-from souk_mkid_readout import error_levels as el
+from mkid_readout import helpers
+from mkid_readout import error_levels as el
 
 class Block(object):
     """

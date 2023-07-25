@@ -1,7 +1,7 @@
 import numpy as np
 
 from .block import Block
-from souk_mkid_readout.error_levels import *
+from mkid_readout.error_levels import *
 
 class Generator(Block):
     def __init__(self, host, name, logger=None):

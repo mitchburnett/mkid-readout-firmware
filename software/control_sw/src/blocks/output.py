@@ -1,7 +1,7 @@
 import numpy as np
 
 from .block import Block
-from souk_mkid_readout.error_levels import *
+from mkid_readout.error_levels import *
 
 class Output(Block):
     USE_CORDIC=0

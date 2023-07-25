@@ -2,9 +2,9 @@ import os
 import time
 from numpy import *; from matplotlib.pyplot import *; ion()
 
-import souk_mkid_readout
+import mkid_readout
 
-s=souk_mkid_readout.SoukMkidReadout('rfsoc4x2',configfile='/home/jackh/src/souk-firmware/software/control_sw/config/souk-single-pipeline-4x2.yaml')
+s=mkid_readout.MkidReadout('rfsoc4x2',configfile='/home/jackh/src/souk-firmware/software/control_sw/config/souk-single-pipeline-4x2.yaml')
 
 if not s.fpga.is_programmed():
     s.program()

@@ -2,7 +2,7 @@ import time
 from numpy import log2
 
 from .block import Block
-from souk_mkid_readout.error_levels import *
+from mkid_readout.error_levels import *
 
 class Sync(Block):
     """

@@ -4,7 +4,7 @@ import sys
 import argparse
 import numpy as np
 import matplotlib.pyplot as plt
-import souk_mkid_readout
+import mkid_readout
 
 HOST = 'zcu111'
 CONFIGFILE = '/home/jackh/src/souk-firmware/software/control_sw/config/souk-single-pipeline.yaml'
@@ -22,7 +22,7 @@ def set_output_freq(r, f, lut=False):
 def scan_bin(r, n, p=50, b=4):
     """
     params:
-      r: SoukMkidReadout Instance
+      r: MkidReadout Instance
       n: PFB bin to center on
       p: Number of frequency points to plot
       b: Number of PFB bins to sweep over
@@ -53,7 +53,7 @@ def plot_scan(r, n, p, b, normalize=True):
     plt.show()
 
 def main(host, configfile):
-    r = souk_mkid_readout.SoukMkidReadout(host, configfile=configfile)
+    r = mkid_readout.MkidReadout(host, configfile=configfile)
     r.program()
     r.initialize()
     r.output.use_cordic()

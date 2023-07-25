@@ -1,7 +1,7 @@
 import time
 
 from .block import Block
-from cosmic_f.error_levels import *
+from mkid_readout.error_levels import *
 
 class Eth(Block):
     """
